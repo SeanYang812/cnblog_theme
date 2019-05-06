@@ -165,10 +165,10 @@
             animateSections: true
         },
         // ---- 主页配置 ----
-        homeTopImg    : "https://www.cnblogs.com/images/cnblogs_com/Yang-Sen/1447717/t_sean_img1.jpg", // 主页图片Url，推荐尺寸>= 1920*1080
+        homeTopImg    : "https://www.cnblogs.com/images/cnblogs_com/Yang-Sen/1447717/t_img4.jpg", // 主页图片Url，推荐尺寸>= 1920*1080
         homeBannerText: "", // 主页头图上的标语，设置此选项会固定显示文字，默认为空，每日自动获取一句。
         // ---- 随笔页配置 ----
-        essayTopImg: "https://www.cnblogs.com/images/cnblogs_com/Yang-Sen/1447717/t_411820.png", // 随笔页图片Url
+        essayTopImg: "https://www.cnblogs.com/images/cnblogs_com/Yang-Sen/1447717/t_img6.jpg", // 随笔页图片Url
         essaySuffix:{ // 随笔后缀处配置
             aboutHtml    : '', // 关于博主，不配置使用默认
             copyrightHtml: '', // 版权声明，不配置使用默认
@@ -183,8 +183,8 @@
             ["申请坑位", 'https://msg.cnblogs.com/send/icaihua'],
         ],
         bottomText: {  // 页脚标语
-            left : "事实并非理所当然", // 图标左侧文字
-            right: "世界总是欲盖弥彰"  // 图标右侧文字
+            left : "心里来来往往", // 图标左侧文字
+            right: "眼前川流不息"  // 图标右侧文字
         }
     };
     /**
@@ -194,7 +194,7 @@
      */
     var staticFileSetting = {
         source   : 'github',
-        versions : '2c2babda659b3fdb1a3ce60c7b07aaef46811230', // 版本号
+        versions : '40eb2c9a90deced1fff6fceec6c321143d9e3511', // 版本号
     };
     // start cache
     $.ajaxSetup({cache: true});
@@ -234,7 +234,7 @@
         file = setFileNameMin(file, directory);
         switch (staticFileSetting.source) {
             case 'github': // 注意：此处为GitHub加载源，如果需要加载自己分支的代码，修改此处URL，URL规则详见：https://www.jsdelivr.com/
-                return 'https://cdn.jsdelivr.net/gh/Zhou-Hepeng/Cnblogs-Theme-SimpleMemory@'+staticFileSetting.versions+'/' + (file ? file : '');
+                return 'https://cdn.jsdelivr.net/gh/SeanYang812/cnblog_theme@'+staticFileSetting.versions+'/' + (file ? file : '');
                 break;
             case 'cnblogs': // 注意：此处为博客园加载源，加载本人博客文件为老版本。本人博客园文件停止更新，如果需要可以修改至自己博客园文件
                 return 'https://blog-static.cnblogs.com/files/Yang-Sen/'+file;

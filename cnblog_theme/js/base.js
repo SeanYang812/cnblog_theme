@@ -340,19 +340,19 @@ function Base() {
             html += '<span id="pageAnimationOffOnText">关闭页面特效</span>';
             html += '</div>';
             $('body').prepend(html);
-            // $('#pageAnimationOffOn').click(function () {
-            //     if ($(this).attr('data') == 'off') {
-            //         $('body').find('canvas').hide();
-            //         $('#pageAnimationOffOnIcon').rotate({animateTo:-360});
-            //         $('#pageAnimationOffOnText').text("打开页面特效");
-            //         $(this).attr('data', 'on');
-            //     } else {
-            //         $('body').find('canvas').show();
-            //         $('#pageAnimationOffOnIcon').rotate({animateTo:360});
-            //         $('#pageAnimationOffOnText').text("关闭页面特效");
-            //         $(this).attr('data', 'off');
-            //     }
-            // });
+            $('#pageAnimationOffOn').click(function () {
+                if ($(this).attr('data') == 'off') {
+                    $('body').find('canvas').hide();
+                    $('#pageAnimationOffOnIcon').rotate({animateTo:-360});
+                    $('#pageAnimationOffOnText').text("打开页面特效");
+                    $(this).attr('data', 'on');
+                } else {
+                    $('body').find('canvas').show();
+                    $('#pageAnimationOffOnIcon').rotate({animateTo:360});
+                    $('#pageAnimationOffOnText').text("关闭页面特效");
+                    $(this).attr('data', 'off');
+                }
+            });
         }
     };
 
