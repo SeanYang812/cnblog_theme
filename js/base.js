@@ -637,7 +637,7 @@ function Base() {
             $('#footer').prepend('<div class="footer-image"></div>');
             setInterval(function(){
                 var footer = $('#footer');
-                var themeHtml = '<p id="ThemeAuthors" style="color: #444;z-index: 999;">- Theme Authors：<a href="https://www.cnblogs.com/icaihua/" target="_blank" style="color:#444;">菜花君°</a> -</p></div>';
+                var themeHtml = '<p id="ThemeAuthors" style="color: #444;z-index: 999;">- Theme Authors：<a href="https://www.cnblogs.com/Yang-Sen/" target="_blank" style="color:#444;">Sean_Yang</a> -</p></div>';
                 if ($('#ThemeAuthors').length == 0) {
                     $('#footer').append(themeHtml);
                 } else {
