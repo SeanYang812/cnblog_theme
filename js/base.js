@@ -582,9 +582,9 @@ function Base() {
         pvHtml += '<div id="cnzzInfo"></div>';
         $('#footer').append(pvHtml).prepend('<div class="footer-image"></div>');
 
-        if (window.location.href.search("http://www.cnblogs.com/Yang-Sen/") == -1 ) {
-            setTheme();
-        }
+        // if (window.location.href.search("http://www.cnblogs.com/Yang-Sen/") == -1 ) {
+        //     setTheme();
+        // }
 
         window.setInterval( setRunTime, 500 );
         setBlogroll();
