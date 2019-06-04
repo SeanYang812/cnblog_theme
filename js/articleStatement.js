@@ -58,9 +58,9 @@ $(document).ready(function(){
     if (articleAuthor != undefined && articleSource != undefined) {
         bottom_html += '<a href="'+articleSource+'" target="_blank">'+articleAuthor+'</a></span></strong> <br>';
         bottom_html += '<span style="font-weight: bold; white-space:nowrap;">出　　处</span>：<a href="'+articleSource+'" target="_blank">'+articleSource+'</a>';
-    } else if ( window.location.href.search("www.cnblogs.com/icaihua") != -1 ) {
-        bottom_html += '<a href="http://www.cnblogs.com/icaihua/" target="_blank">菜花君°</a></span></strong> <br>';
-        bottom_html += '<span style="font-weight: bold; white-space:nowrap;">出　　处</span>：<a href="http://www.cnblogs.com/icaihua/" target="_blank">http://www.cnblogs.com/icaihua/</a>';
+    } else if ( window.location.href.search("https://www.cnblogs.com/Yang-Sen/") != -1 ) {
+        bottom_html += '<a href="http://www.cnblogs.com/icaihua/" target="_blank">Sean-Yang</a></span></strong> <br>';
+        bottom_html += '<span style="font-weight: bold; white-space:nowrap;">出　　处</span>：<a href="https://www.cnblogs.com/Yang-Sen/" target="_blank">https://www.cnblogs.com/Yang-Sen/</a>';
     } else {
         var str = window.cnblogsConfig.blogUser;
         var homeUrl = tmp;
@@ -75,7 +75,7 @@ $(document).ready(function(){
     if (window.cnblogsConfig.essaySuffix.aboutHtml != "") {
         bottom_html += '<span style="font-weight: bold; white-space:nowrap;">关于博主</span>：'+window.cnblogsConfig.essaySuffix.aboutHtml;
     } else {
-        bottom_html += '<span style="font-weight: bold; white-space:nowrap;">关于博主</span>：编程路上的小学生，热爱技术，喜欢专研。评论和私信会在第一时间回复。或者<a href="http://msg.cnblogs.com/msg/send/'+tmp[3]+'" target="_blank">直接私信</a>我。';
+        bottom_html += '<span style="font-weight: bold; white-space:nowrap;">关于博主</span>：谦受益，满招损;热爱技术，喜欢钻研。评论和私信会在第一时间回复。或者<a href="http://msg.cnblogs.com/msg/send/'+tmp[3]+'" target="_blank">直接私信</a>我。';
     }
     bottom_html += '<br>';
     if (window.cnblogsConfig.essaySuffix.copyrightHtml != "") {

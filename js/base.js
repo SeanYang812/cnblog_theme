@@ -507,7 +507,8 @@ function Base() {
             if (bothWidth > listWidth + 50 && bodyWidth > 1230) {
                 $('#sideToolbar').css('visibility', 'visible');
             } else {
-                $('#sideToolbar').css('visibility', 'hidden');
+                // $('#sideToolbar').css('visibility', 'hidden');
+                $('#sideToolbar').css('visibility', 'visible');
             }
         }
     };
